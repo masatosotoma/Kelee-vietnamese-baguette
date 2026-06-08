@@ -822,9 +822,9 @@ function closeSuccessDialog() {
 // Leaflet.js Map Initialization
 // ==========================================================================
 function initLeafletMap() {
-  // Empire State Building region coordinates for Kelee Baguette placement
-  const latitude = 40.7484;
-  const longitude = -73.9857;
+  // ScarboroughPassmore & Midland location coordinates for Kelee Baguette placement
+  const latitude = 43.8198;
+  const longitude = -79.2898;
 
   // Set up the Leaflet Map container
   const map = L.map("leaflet-map", {
