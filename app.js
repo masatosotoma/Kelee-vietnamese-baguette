@@ -305,7 +305,17 @@ const TRANSLATIONS = {
     "contact-title": "Location & Hours",
     "contact-addr-title": "Our Address",
     "contact-hours-title": "Opening Hours",
-    "contact-hours-desc": "Daily: 8:00 AM – 8:00 PM",
+    "contact-hours-desc": `
+      <ul class="hours-detailed">
+        <li><strong>Tuesday:</strong> 10:00 AM – 8:00 PM</li>
+        <li><strong>Wednesday:</strong> 10:00 AM – 8:00 PM</li>
+        <li><strong>Thursday:</strong> 10:00 AM – 8:00 PM</li>
+        <li><strong>Friday:</strong> 10:00 AM – 8:00 PM</li>
+        <li><strong>Saturday:</strong> 10:00 AM – 8:00 PM</li>
+        <li><strong>Sunday:</strong> 10:00 AM – 8:00 PM</li>
+        <li class="closed-day"><strong>Monday:</strong> Closed</li>
+      </ul>
+    `,
     "contact-hours-hint": "Kitchen closes 15 minutes before closing.",
     "contact-phone-title": "Get in Touch",
     "map-overlay-title": "Kelee Vietnamese Baguette",
@@ -358,7 +368,17 @@ const TRANSLATIONS = {
     "contact-title": "地址与营业时间",
     "contact-addr-title": "营业地址",
     "contact-hours-title": "营业时间",
-    "contact-hours-desc": "每日: 上午 8:00 – 晚上 8:00",
+    "contact-hours-desc": `
+      <ul class="hours-detailed">
+        <li><strong>星期二:</strong> 上午 10:00 – 晚上 8:00</li>
+        <li><strong>星期三:</strong> 上午 10:00 – 晚上 8:00</li>
+        <li><strong>星期四:</strong> 上午 10:00 – 晚上 8:00</li>
+        <li><strong>星期五:</strong> 上午 10:00 – 晚上 8:00</li>
+        <li><strong>星期六:</strong> 上午 10:00 – 晚上 8:00</li>
+        <li><strong>星期日:</strong> 上午 10:00 – 晚上 8:00</li>
+        <li class="closed-day"><strong>星期一:</strong> 店休</li>
+      </ul>
+    `,
     "contact-hours-hint": "厨房在打烊前15分钟停止接单。",
     "contact-phone-title": "联系电话",
     "map-overlay-title": "Kelee 越南法棍",

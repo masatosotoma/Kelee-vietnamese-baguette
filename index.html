@@ -231,7 +231,7 @@
               </div>
               <div class="info-text">
                 <h3 data-i18n="contact-hours-title">Opening Hours</h3>
-                <p data-i18n="contact-hours-desc"><strong>Daily:</strong> 8:00 AM – 8:00 PM</p>
+                <div id="contact-hours-container" data-i18n="contact-hours-desc"></div>
                 <p class="hours-hint" data-i18n="contact-hours-hint">Kitchen closes 15 minutes before closing.</p>
               </div>
             </div>
@@ -303,14 +303,7 @@
         </ul>
       </div>
 
-      <div class="footer-newsletter">
-        <h4 data-i18n="footer-news-title">Newsletter</h4>
-        <p data-i18n="footer-news-desc">Sign up to receive mouth-watering updates, new menu items, and special offers!</p>
-        <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!'); this.reset();">
-          <input type="email" placeholder="Your email address" required aria-label="Email address">
-          <button type="submit" aria-label="Subscribe"><i class="fa-solid fa-paper-plane"></i></button>
-        </form>
-      </div>
+
     </div>
 
     <div class="footer-bottom text-center">

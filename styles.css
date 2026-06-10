@@ -891,10 +891,42 @@ p {
   font-size: 0.95rem;
 }
 
+.hours-detailed {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  padding: 0;
+}
+
+.hours-detailed li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+}
+
+.hours-detailed li strong {
+  font-weight: 500;
+  color: var(--brand-espresso);
+  display: inline-block;
+  width: 90px;
+}
+
+.hours-detailed li.closed-day {
+  color: #a34b4b;
+}
+
+.hours-detailed li.closed-day strong {
+  color: #a34b4b;
+}
+
 .hours-hint {
   font-size: 0.8rem;
   font-style: italic;
-  margin-top: 4px;
+  margin-top: 12px;
   color: var(--brand-caramel) !important;
 }
 
@@ -1041,7 +1073,7 @@ p {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
+  grid-template-columns: 3fr 1fr;
   gap: 48px;
   margin-bottom: 60px;
 }
@@ -1181,11 +1213,11 @@ p {
     gap: 40px;
   }
   .footer-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 40px;
   }
   .footer-brand {
-    grid-column: span 2;
+    grid-column: span 1;
   }
 }
 
