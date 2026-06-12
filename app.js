@@ -422,7 +422,6 @@ document.addEventListener("DOMContentLoaded", () => {
   updateLanguageUI();
   renderMenu();
   setupEventListeners();
-  initLeafletMap();
 });
 
 // Update all static texts on elements containing [data-i18n]
@@ -607,49 +606,4 @@ function handleWindowScroll() {
   });
 }
 
-// ==========================================================================
-// Leaflet.js Map Initialization (Scarborough Location)
-// ==========================================================================
-function initLeafletMap() {
-  // Passmore & Midland location coordinates in Scarborough
-  const latitude = 43.8198;
-  const longitude = -79.2898;
 
-  // Set up the Leaflet Map container
-  const map = L.map("leaflet-map", {
-    center: [latitude, longitude],
-    zoom: 16,
-    scrollWheelZoom: false
-  });
-
-  // Warm light-brown maps styling: Use standard OpenStreetMap tiles, and styled via CSS filters
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  }).addTo(map);
-
-  // Custom cup/baguette icon marker
-  const customIcon = L.divIcon({
-    className: "custom-map-marker",
-    html: `
-      <div style="
-        background-color: var(--brand-coffee); 
-        color: var(--bg-cream); 
-        width: 38px; 
-        height: 38px; 
-        border-radius: 50%; 
-        border: 2px solid var(--accent-gold); 
-        display: flex; 
-        align-items: center; 
-        justify-content: center;
-        box-shadow: var(--shadow-md);
-      ">
-        <i class="fa-solid fa-mug-hot" style="font-size: 0.95rem;"></i>
-      </div>
-    `,
-    iconSize: [38, 38],
-    iconAnchor: [19, 19]
-  });
-
-  // Place custom marker on map
-  L.marker([latitude, longitude], { icon: customIcon }).addTo(map);
-}
